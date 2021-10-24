@@ -129,11 +129,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gagandeep\\OneDrive\\Documents\\GitHub\\MCDA5510_Assignments\\Assignment1\\Assignment1\\Assignment1.csproj",
+      "projectUniqueName": "C:\\Users\\Gagandeep\\Documents\\A00453339_MCDA5510\\Assignment1\\Assignment1\\Assignment1.csproj",
       "projectName": "Assignment1",
-      "projectPath": "C:\\Users\\Gagandeep\\OneDrive\\Documents\\GitHub\\MCDA5510_Assignments\\Assignment1\\Assignment1\\Assignment1.csproj",
+      "projectPath": "C:\\Users\\Gagandeep\\Documents\\A00453339_MCDA5510\\Assignment1\\Assignment1\\Assignment1.csproj",
       "packagesPath": "C:\\Users\\Gagandeep\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gagandeep\\OneDrive\\Documents\\GitHub\\MCDA5510_Assignments\\Assignment1\\Assignment1\\obj\\",
+      "outputPath": "C:\\Users\\Gagandeep\\Documents\\A00453339_MCDA5510\\Assignment1\\Assignment1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Gagandeep\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -8,6 +8,7 @@ namespace Assignment1
     public class DirWalker
     {
         public bool firstline = true;
+        public SimpleCSVParser fw2 = new SimpleCSVParser();
         public void walk(String path)
         {
 
@@ -27,12 +28,12 @@ namespace Assignment1
             }
             string[] fileList = Directory.GetFiles(path);
             Console.WriteLine(path);
-            SimpleCSVParser fw = new SimpleCSVParser();
+            //SimpleCSVParser fw = new SimpleCSVParser();
             foreach (string filepath in fileList)
             {
 
                 //Console.WriteLine("File:" + filepath);
-                fw.parse(filepath, firstline);
+                fw2.parse(filepath, firstline);
                 firstline = false;
             }
         }

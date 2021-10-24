@@ -4,13 +4,15 @@ using Microsoft.VisualBasic.FileIO;
 using CsvHelper;
 using CsvHelper.Configuration;
 using System.Globalization;
+using System.Collections.Generic;
 
 namespace Assignment1
 {
-    public class SimpleCSVParser
+   public class SimpleCSVParser
     {
 
-
+        public List<int> valid_list = new List<int>();
+        public List<int> invalid_list = new List<int>();
         //       public static void Main(String[] args)
         //       {
         //           SimpleCSVParser parser = new SimpleCSVParser();
@@ -23,9 +25,9 @@ namespace Assignment1
             {
                 int invalid_cnt=0;
                 int valid_cnt=0;
-                using (var stream = File.Open(@"C:\Users\Gagandeep\OneDrive\Documents\GitHub\MCDA5510_Assignments\Test.csv", FileMode.Append))
+                using (var stream = File.Open(@"C:\Users\Gagandeep\Documents\A00453339_MCDA5510\Assignment1\Output\Output.csv", FileMode.Append))
                 using (var writer = new StreamWriter(stream))
-                using (var stream2 = File.Open(@"C:\Users\Gagandeep\OneDrive\Documents\GitHub\MCDA5510_Assignments\log.txt", FileMode.Append))
+                using (var stream2 = File.Open(@"C:\Users\Gagandeep\Documents\A00453339_MCDA5510\Assignment1\Logs\log.txt", FileMode.Append))
                 using (var writer2 = new StreamWriter(stream2))
                 using (TextFieldParser parser = new TextFieldParser(fileName))
                 {
@@ -70,7 +72,10 @@ namespace Assignment1
                         }
                     }
                     writer2.WriteLine("Number of valid records in file "+fileName+ ": "+valid_cnt);
-                    writer2.WriteLine("Number of valid records in file " + fileName + ": " + invalid_cnt);
+                    writer2.WriteLine("Number of invalid records in file " + fileName + ": " + invalid_cnt);
+                    valid_list.Add(valid_cnt);
+                    invalid_list.Add(invalid_cnt);
+                    //Console.WriteLine(string.Join(",", valid_list));
 
                 }
                 }
