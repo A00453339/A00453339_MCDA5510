@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "AE9nw0xJ9cMd43UNQR7jhnGIrju8Hnyl/aXma2B5AodGpQ+QZ6hzaHMgi0XLZtKVmjd211YXq+ePtG3Lvv7l8g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Gagandeep\\OneDrive\\Documents\\GitHub\\MCDA5510_Assignments\\Assignment1\\Assignment1\\Assignment1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gagandeep\\.nuget\\packages\\csvhelper\\27.1.1\\csvhelper.27.1.1.nupkg.sha512",
+    "C:\\Users\\Gagandeep\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Gagandeep\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\Gagandeep\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\Gagandeep\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\Gagandeep\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
