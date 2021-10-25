@@ -18,11 +18,11 @@ namespace Assignment1
             using (var stream2 = File.Open(@"C:\Users\Gagandeep\Documents\A00453339_MCDA5510\Assignment1\Logs\log.txt", FileMode.Append))
             using (var writer2 = new StreamWriter(stream2))
             {
-                writer2.WriteLine("Total number of valid records:"+fw1.fw2.valid_list.Sum());
+                writer2.WriteLine("Total number of valid records:" + fw1.fw2.valid_list.Sum());
                 writer2.WriteLine("Total number of invalid records:" + fw1.fw2.invalid_list.Sum());
                 watch.Stop();
                 writer2.WriteLine($"Execution Time: {watch.ElapsedMilliseconds} ms");
-            }             
+            }
         }
     }
 

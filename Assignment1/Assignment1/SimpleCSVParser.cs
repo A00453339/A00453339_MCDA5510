@@ -31,6 +31,8 @@ namespace Assignment1
                 using (var writer2 = new StreamWriter(stream2))
                 using (TextFieldParser parser = new TextFieldParser(fileName))
                 {
+                    string[] path_list = fileName.Split('\\');
+                    string data_date = path_list[^4]+"/"+ path_list[^3]+ "/"+path_list[^2];
                     parser.TextFieldType = FieldType.Delimited;
                     parser.SetDelimiters(",");
                     while (!parser.EndOfData)
@@ -60,9 +62,14 @@ namespace Assignment1
                                 if (fields[0] != "First Name")
                                 {
                                     valid_cnt++;
+                                    string valid_str = string.Join(",", fields) +","+ data_date;
+                                    writer.WriteLine(valid_str);
                                 }
-                                string valid_str = string.Join(",", fields);
-                                writer.WriteLine(valid_str);
+                                else
+                                {
+                                    string valid_str = string.Join(",", fields)+",data_date";
+                                    writer.WriteLine(valid_str);
+                                }
                             }
                         }
                         else
